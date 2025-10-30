@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import include, path
 from django.http import HttpResponse 
 
+def home(request):
+    return HttpResponse
+
 urlpatterns = [
     path('', home),
     path('demo/', include('demo.urls')),
